@@ -8,16 +8,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, VAShakeUtilDelegate {
+    
+    var listening: Bool = false
+    
+    @IBOutlet weak var lblMessage: UILabel!
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        lblMessage.text = "Shake to start listening"
+        
+        VAShakeUtil.registerForShakeEvent(delegate: self)
+    }
+    
+    func deviceDidShaken() {
+        
+        if !listening {
+            
+            listening = true
+            lblMessage.text = "I am listening to you :)"
+        }
+        else {
+            
+            listening = false
+            lblMessage.text = "Shake to start listening"
+        }
     }
 
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

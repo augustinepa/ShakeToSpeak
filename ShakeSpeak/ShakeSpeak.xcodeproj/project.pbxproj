@@ -12,6 +12,7 @@
 		9C38818F1F68FBC000F50920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C38818D1F68FBC000F50920 /* Main.storyboard */; };
 		9C3881911F68FBC000F50920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3881901F68FBC000F50920 /* Assets.xcassets */; };
 		9C3881941F68FBC000F50920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3881921F68FBC000F50920 /* LaunchScreen.storyboard */; };
+		9C38819C1F690DCC00F50920 /* VAShakeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38819B1F690DCC00F50920 /* VAShakeUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9C3881901F68FBC000F50920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C3881931F68FBC000F50920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C3881951F68FBC000F50920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C38819B1F690DCC00F50920 /* VAShakeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAShakeUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				9C3881901F68FBC000F50920 /* Assets.xcassets */,
 				9C3881921F68FBC000F50920 /* LaunchScreen.storyboard */,
 				9C3881951F68FBC000F50920 /* Info.plist */,
+				9C38819B1F690DCC00F50920 /* VAShakeUtil.swift */,
 			);
 			path = ShakeSpeak;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				9C38818C1F68FBC000F50920 /* ViewController.swift in Sources */,
 				9C38818A1F68FBC000F50920 /* AppDelegate.swift in Sources */,
+				9C38819C1F690DCC00F50920 /* VAShakeUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +265,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6J3JWZ2Y4;
 				INFOPLIST_FILE = ShakeSpeak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wellsfargo.ShakeSpeak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6J3JWZ2Y4;
 				INFOPLIST_FILE = ShakeSpeak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wellsfargo.ShakeSpeak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
